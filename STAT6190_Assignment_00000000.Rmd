@@ -1,0 +1,161 @@
+---
+title: "STAT6190: Statistical Report"
+author: "Chun Hung Kong "
+date: "Compiled and submitted on ... (insert date)"
+output: 
+    bookdown::pdf_document2:
+      keep_tex: no
+      toc: false
+      number_sections: false
+      latex_engine: xelatex
+---
+
+
+# Introduction
+
+A major mobile application developer recently redesigned their user interface across multiple app categories. 
+The company collected feedback from users before and after the redesign regarding their usage patterns, satisfaction ratings, and willingness to recommend their apps to others. This analysis aims to identify factors that influence user satisfaction and evaluate the success of the UI redesign.
+
+It answers the following **research questions**:
+
+1. On average, do users spend more than 14 hours/week using these apps?
+2. On average, is the user rating above 7?
+3. Did user ratings change after the UI redesign?
+4. Analyse user ratings and gender:  
+		a. Do user ratings vary with gender?  
+		b. Are user ratings different between males and females?
+5. Do user ratings differ by app category?
+6. What is the effect of gender and subscription type on user ratings? Is there an interaction between gender and subscription type?
+7. Is the proportion of males equal to that of females?
+8. Are app category and willingness to share with friends in the male population associated?
+9. Are gender and finding features useful associated?
+10. What are the key predictors of user ratings?  
+		a. Find the best linear model to explain user ratings.  
+		b. Comment on the effect size of the significant predictor.  
+		c. Comment on how much of the variation in user ratings can be explained by the significant predictors.  
+
+
+
+# Data Description
+
+
+The dataset includes 200 observations of the following variables:
+
+- `user_id`: Participant identifier.
+- `app_category`: One of "Gaming", "Productivity", "Social", "Finance".
+- `subscription_type`: One of "Free", "Premium".
+- `user_gender`: One of "Male", "Female", "Other".
+- `daily_usage`: Daily hours spent using the app (averaged over a week).
+- `user_rating`: The user's satisfaction rating (0-10 scale, where 0 means "Not satisfied at all" and 10 means "Completely satisfied").
+- `shares_with_friends`: Would the user share/recommend this app to friends? Yes/No.
+- `found_features_useful`: Did the user find the new features useful? Yes/No.
+- `before_vs_after_rating`: The difference (after - before) in user rating after the UI redesign.
+
+
+
+# Exploratory Data Analysis
+
+## Summary Statistics
+
+*Please complete this section.*
+
+
+## Visual Exploration
+
+*Please complete this section.*
+
+
+
+# Results
+
+In this section, we summarise findings from statistical analyses. The actual analyses and assumption checking is reported in appendix sections.  
+Each research question is answered in the subsections below.
+
+## Do users spend more than 14 hours/week using these apps on average?
+
+*Please complete this section.*
+
+## Is the user rating above 7 on average?
+
+*Please complete this section.*
+
+## Did user ratings change after the UI redesign?
+
+Although the paired t-test did not detect a significant change (p = 0.24), the data were non-normal and right-skewed.
+Therefore, the nonparametric Wilcoxon signed-rank test was used and indicated a significant increase in user ratings after the redesign (p = 0.0013).
+
+## Do user ratings vary with gender? Are they different between males and females?
+
+*Please complete this section.*
+
+## Do user ratings differ by app category?
+
+*Please complete this section.*
+
+## What is the effect of gender and subscription type on user ratings? Is there an interaction between gender and subscription type?
+
+*Please complete this section.*
+
+## Is the proportion of males equal to that of females?
+
+*Please complete this section.*
+
+## Are app category and willingness to share with friends in the male population associated?
+
+*Please complete this section.*
+
+## Are gender and finding features useful associated?
+
+*Please complete this section.*
+
+## What are the key predictors of user ratings, and how much of the variation in user ratings can be explained by the significant predictors?
+
+*Please complete this section.*
+
+
+# Discussion
+
+*Please complete this section.*
+
+\newpage
+
+
+# Appendix 1. Do users spend more than 12 hours/week using these apps on average?
+
+*Please complete this section.*
+
+# Appendix 2. Is the user rating above 6.5 on average?
+
+*Please complete this section.*
+
+# Appendix 3. Did user ratings change after the UI redesign?
+
+*Please complete this section.*
+
+# Appendix 4. Do user ratings vary with gender? Are they different between males and females?
+
+*Please complete this section.*
+
+# Appendix 5. Do user ratings differ by app category?
+
+*Please complete this section.*
+
+# Appendix 6. Is there an interaction between gender and subscription type on user ratings?
+
+*Please complete this section.*
+
+# Appendix 7. Is the proportion of males equal to that of females?
+
+*Please complete this section.*
+
+# Appendix 8. Are app category and willingness to share with friends in the male population associated?
+
+*Please complete this section.*
+
+# Appendix 9. Are gender and finding features useful associated?
+
+*Please complete this section.*
+
+# Appendix 10. What are the key predictors of user ratings?
+
+*Please complete this section.*
